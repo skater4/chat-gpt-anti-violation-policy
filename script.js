@@ -8,7 +8,6 @@ setInterval(function(){
 	}
 
 	if (lastAssistantMessage && lastAssistantMessage.querySelector(':scope .text-token-text-error') && lastMessage != '') {
-		console.log('fix ' + lastMessage);
 		// Очищаем элемент
 		lastAssistantMessage.innerHTML = '';
 
