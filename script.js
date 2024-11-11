@@ -7,7 +7,7 @@ setInterval(function(){
 		lastMessage = lastAssistantMessage.querySelector('.markdown').innerText;
 	}
 
-	if (lastAssistantMessage && lastAssistantMessage.querySelector('.border-red-500') && lastMessage != '') {
+	if (lastAssistantMessage && lastAssistantMessage.querySelector(':scope .text-token-text-error') && lastMessage != '') {
 		console.log('fix ' + lastMessage);
 		// Очищаем элемент
 		lastAssistantMessage.innerHTML = '';
